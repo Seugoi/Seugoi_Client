@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../../../styles/common/Style.css';
-import styles from '../../../styles/add/notice/Notice.module.css';
+import styles from '../../../styles/add/notice/NoticeAdd.module.css';
 
-import Input from '../../common/Input';
+import Input from '../Input';
 import ContentInput from '../ContentInput';
-import Button from '../../common/Button';
+import Button from '../Button';
 
 function Notice() {
     const [title, setTitle] = useState('');

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import '../../../styles/common/Style.css';
-import styles from '../../../styles/add/task/Task.module.css';
+import styles from '../../../styles/add/task/TaskAdd.module.css';
 
-import Input from "../../common/Input";
+import Input from "../Input";
 import ContentInput from "../ContentInput";
-import Button from "../../common/Button";
+import Button from "../Button";
 
 function Task() {
     const [title, setTitle] = useState('');

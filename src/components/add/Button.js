@@ -1,5 +1,5 @@
 import '../../styles/common/Style.css';
-import styles from '../../styles/common/Button.module.css';
+import styles from '../../styles/add/Button.module.css';
 
 function Button({ text, backgroundColor, onClick }) {
     return (

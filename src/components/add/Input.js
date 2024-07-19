@@ -1,5 +1,5 @@
 import '../../styles/common/Style.css';
-import styles from '../../styles/common/Input.module.css';
+import styles from '../../styles/add/Input.module.css';
 
 function Input({ text, setContent }) {
     return (
