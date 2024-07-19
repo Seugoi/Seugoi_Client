@@ -1,9 +1,15 @@
 import '../../styles/common/Style.css';
 import styles from '../../styles/common/Button.module.css';
 
-function Button({ text, backgroundColor }) {
+function Button({ text, backgroundColor, onClick }) {
     return (
-        <button className={styles['button']} style={{ backgroundColor: backgroundColor }}>{text}</button>
+        <button 
+            className={styles['button']} 
+            style={{ backgroundColor: backgroundColor }} 
+            onClick={onClick}
+        >
+            {text}
+        </button>
     )
 }
 

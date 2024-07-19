@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/add/notice/Notice.module.css';
 
@@ -9,6 +10,24 @@ import Button from '../../common/Button';
 function Notice() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
+
+    // 공지 추가하기
+    const addNotice = async () => {
+        try {
+            const request = await axios.post(`${process.env.REACT_APP_HOST}/notice`, {
+                user_id: 1,
+                title: title,
+                content: content
+            });
+            if (request.status === 201) {
+                console.log("공지 추가 성공");
+            } else {
+                console.log("공지 추가 실패", request.status);
+            }
+        } catch(err) {
+            console.log(err);
+        }
+    }
 
     return (
         <div className={styles['container']}>
@@ -23,7 +42,7 @@ function Notice() {
             </div>
 
             <div className={styles['div-button']}>
-                <Button text="공지 추가하기" backgroundColor="#B2B2BB" />
+                <Button text="공지 추가하기" backgroundColor="#B2B2BB" onClick={addNotice} />
             </div>
         </div>
     )
