@@ -1,7 +1,7 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: #121117;
+    background-color: var(--main-color);
 }
 
 .div-select {

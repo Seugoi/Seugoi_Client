@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.study-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+}
+.info > p:nth-child(1) {
+    font-weight: var(--ExtraBold);
+    font-size: 40px;
+}
+.info > p:nth-child(2) {
+    font-weight: var(--Regular);
+    font-size: 14px;
+}
+
+.D-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 3% 5%;
+}
+.D-day > p {
+    font-weight: var(--Medium);
+    font-size: 14px;
+}
