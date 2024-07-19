@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 10px;
+    padding: 3% 5% 4%;
+    color: white;
+    background-color: #252831;
+    row-gap: 12px;
+}
+
+.container > hr {
+    border: 1px solid #656D86;
+}
+
+.container > p {
+    font-weight: var(--Medium);
+    font-size: 14px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.title > p {
+    font-weight: var(--SemiBold);
+    font-size: 16px;
+}
