@@ -1,0 +1,17 @@
+.container {
+    padding: 7% 5%;
+}
+
+.titleBar-container {
+    display: flex;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-weight: var(--Medium);
+    font-size: 20px;
+}
