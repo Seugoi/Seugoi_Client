@@ -1,0 +1,28 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121117;
+}
+
+.div-select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    display: flex;
+}
+
+.task-add,
+.notice-add {
+    text-align: center;
+    padding: 3% 10%;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #1D2027;
+
+    color: white;
+    font-weight: var(--Bold);
+    font-size: 16px;
+}
