@@ -5,9 +5,10 @@ import styles from '../../styles/study/StudyDetail.module.css';
 import TitleBar from "../common/TitleBar";
 import StudyImage from './StudyImage';
 import TaskView from './TaskView';
+import StudyView from './StudyView';
 
 function StudyDetail() {
-    const [selectComponent, setSelectComponent] = useState('task');
+    const [selectComponent, setSelectComponent] = useState('study');
 
     return (
         <div className={styles['container']}>
@@ -32,7 +33,8 @@ function StudyDetail() {
                 </div>
                 
                 <div className={styles['scroll-content']}>
-                    <TaskView />
+                    { selectComponent === 'task' && <TaskView /> }
+                    { selectComponent === 'study' && <StudyView /> }
                 </div>
             </div>
         </div>
