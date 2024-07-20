@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--main-color);
+    overflow: hidden;
 }
 
 .div-change {
@@ -36,4 +37,8 @@
 .clickedStudy {
     background-color: white;
     color: var(--main-color);
+}
+
+.scroll-content {
+    height: 59vh;
 }
