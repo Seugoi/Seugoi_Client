@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.container > p {
+    font-weight: var(--Medium);
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+}
