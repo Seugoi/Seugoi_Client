@@ -30,7 +30,10 @@ function StudyDetail() {
                         스터디 소개
                     </div>
                 </div>
-                <TaskView />
+                
+                <div className={styles['scroll-content']}>
+                    <TaskView />
+                </div>
             </div>
         </div>
     )

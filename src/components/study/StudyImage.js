@@ -11,7 +11,7 @@ function StudyImage() {
                     <p>#java #코딩</p>
                 </div>
                 <div className={styles['D-day']}>
-                    <p>D - 40</p>
+                    <p>D-40</p>
                 </div>
             </div>
         </div>
