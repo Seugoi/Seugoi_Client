@@ -32,7 +32,7 @@ function Task() {
             <div className={styles['task-image']}>
                 <p><Icon icon='ic:round-image' />이미지 추가하기</p>
                 <div className={styles['image-button']}>
-                    <Icon icon='ic:round-plus' fontSize="35px"/>
+                    <Icon icon='ic:round-plus' fontSize="35"/>
                 </div>
             </div>
 
