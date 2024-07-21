@@ -1,9 +1,9 @@
 import TaskNoticeAdd from '../components/add/TaskNoticeAdd';
 
-function TaskNotice_Add() {
+function TaskNoticeAddPage() {
     return (
         <TaskNoticeAdd />
     )
 }
 
-export default TaskNotice_Add;
+export default TaskNoticeAddPage;
