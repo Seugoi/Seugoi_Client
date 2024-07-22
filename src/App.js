@@ -5,11 +5,14 @@ import StudyDetail from './pages/StudyDetail';
 import TaskNoticeAdd from './pages/TaskNoticeAdd';
 import MyStudy from './pages/MyStudy';
 import Splash from './pages/Splash';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path='/home' element={<Home />} />
+        
         <Route path='/study/1' element={<StudyDetail />} />
 
         <Route path='/add' element={<TaskNoticeAdd />} />
