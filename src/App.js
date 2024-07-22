@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import StudyDetail from './pages/StudyDetail';
 import TaskNoticeAdd from './pages/TaskNoticeAdd';
 import MyStudy from './pages/MyStudy';
+import Splash from './pages/Splash';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path='/add' element={<TaskNoticeAdd />} />
 
         <Route path='/my_study' element={<MyStudy />} />
+
+        <Route path='/' element={<Splash />} />
       </Routes>
     </Router>
   );
