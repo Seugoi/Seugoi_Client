@@ -1,0 +1,87 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #252831;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: 100;
+    margin: 7% 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px 0px 25px;
+    background-color: #252831;
+    color: #ffffff;
+  }
+  
+  .col {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .col-start {
+    text-align: left;
+  }
+  
+  .col-end {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 15px;
+  }
+  
+  .days {
+    display: flex;
+    background-color: #252831;
+    padding: 10px 0;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+    background-color: #252831;
+    padding: 0 15px 15px 15px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cell {
+    flex: 1;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  
+  .cell.disabled {
+    opacity: 0.5;
+  }
+  
+  .cell.selected {
+    font-weight: 600;
+  }
+  
+  .cell .bg.highlight {
+    margin-top: auto;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+  }
+  .icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
