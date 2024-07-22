@@ -8,7 +8,7 @@ function Header() {
         src={process.env.PUBLIC_URL + '/images/logo.png'}
         alt="logo"
       />
-      <p className="title">IT관련 스터디들을 한눈에!</p>
+      <p className={styles['title']}>IT관련 스터디들을 한눈에!</p>
     </div>
   );
 }
