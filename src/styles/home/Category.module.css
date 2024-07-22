@@ -1,0 +1,33 @@
+.category{
+    display: flex;
+    padding: 5px 14px;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 50px;
+    white-space: nowrap;
+}
+.category-container{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 15px 25px;
+    column-gap: 6px;
+}
+.active{
+    white-space: nowrap;
+    padding: 8px 15px;
+    border: 1px solid var(--green);
+    border-radius: 50px;
+    white-space: nowrap;
+    background-color: var(--green);
+}
+.box{
+    position: absolute;
+    width: 30px;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    right: 0;
+    z-index: 99;
+    background: linear-gradient(270deg, var(--main-color), transparent);
+}
