@@ -1,0 +1,35 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    row-gap: 27px;
+}
+
+.text {
+    font-weight: var(--ExtraBold);
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+}
+
+.scroll-container {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container > div:last-child {
+    margin-bottom: 30px;
+}
