@@ -1,0 +1,15 @@
+.logo {
+  width: 170px;
+  height: 57px;
+}
+
+.box {
+  margin: 0 0 78px 35px;
+  align-self: flex-start;
+}
+
+.title {
+  opacity: 0.8;
+  color: #FFF;
+  font-family: 'Pretendard';
+}

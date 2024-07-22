@@ -5,6 +5,7 @@ import StudyDetail from './pages/StudyDetail';
 import TaskNoticeAdd from './pages/TaskNoticeAdd';
 import MyStudy from './pages/MyStudy';
 import Splash from './pages/Splash';
+import Join from './pages/Join';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path='/my_study' element={<MyStudy />} />
 
         <Route path='/' element={<Splash />} />
+
+        <Route path='/join' element={<Join />} />
       </Routes>
     </Router>
   );
