@@ -1,0 +1,96 @@
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 18px;
+    margin-bottom: 25px;
+}
+.item-container{
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 25px;
+    background-color: var(--main-color);
+    width: 100vw;
+    height: fit-content;
+    column-gap: 20px;
+    padding-top: 20px;
+}
+.container:last-child{
+    padding-right: 50px;
+}
+
+.container {
+    width: fit-content;
+    height: 100%;
+}
+
+.inner-container {
+    width: 41.5vw;
+    height: 10vh;
+    padding: 7% 0;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    border-radius: 15px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.66;
+}
+.img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 5px;
+    width: 100%;
+    z-index: 2;
+}
+.content > p {
+    font-weight: var(--ExtraBold);
+    font-size: 16px;
+    color: white;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.category {
+    display: flex;
+    column-gap: 6px;
+    font-weight: 200;
+    font-size: 13px;
+}
+.category p{
+    white-space: nowrap;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(255, 255, 255, 0.7);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+}

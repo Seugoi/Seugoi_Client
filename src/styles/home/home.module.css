@@ -1,0 +1,22 @@
+.body{
+    background-color: var(--main-color);
+    padding: 0 25px;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20%;
+}
+.wiseSaying{
+    display: flex;
+    width: calc(100% - 76px);
+    white-space: nowrap;
+    background-color: #252831;
+    padding: 10px 13px;
+    border-radius: 7px;
+    margin: 0 auto;
+    overflow: scroll;
+    margin-bottom: 6%;
+}
