@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    padding: 10% 5% 0 5%;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    font-weight: var(--ExtraBold);
+}
