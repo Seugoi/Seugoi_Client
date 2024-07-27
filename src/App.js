@@ -9,6 +9,7 @@ import Splash from './pages/Splash';
 import Home from './pages/Home';
 import Join from './pages/Join';
 import Info from './components/join/Info';
+import StudyInfo from './pages/StudyInfo';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path='/my_study' element={<MyStudy />} />
 
         <Route path='/like_study' element={<LikeStudy />} />
+
+        <Route path='/study_info' element={<StudyInfo />} />
       </Routes>
     </Router>
   );
