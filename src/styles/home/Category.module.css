@@ -5,6 +5,7 @@
     border: 1px solid rgb(255, 255, 255, 0.5);
     border-radius: 50px;
     white-space: nowrap;
+    color: white;
 }
 .category-container{
     display: flex;
@@ -20,6 +21,7 @@
     border-radius: 50px;
     white-space: nowrap;
     background-color: var(--green);
+    color: white;
 }
 .box{
     position: absolute;
