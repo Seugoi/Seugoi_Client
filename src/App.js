@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Join from './pages/Join';
 import Info from './components/join/Info';
 import StudyInfo from './pages/StudyInfo';
+import Study from './pages/Study';
+import MyPage from './pages/MyPage';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path='/seugoi_kakaoOAuth' element={<Info />} />
 
         <Route path='/home' element={<Home />} />
-        
+
+        <Route path='/study' element={<Study />} />
+
         <Route path='/study/1' element={<StudyDetail />} />
 
         <Route path='/add' element={<TaskNoticeAdd />} />
@@ -30,6 +34,8 @@ function App() {
         <Route path='/like_study' element={<LikeStudy />} />
 
         <Route path='/study_info' element={<StudyInfo />} />
+
+        <Route path='/mypage' element={<MyPage />} />
       </Routes>
     </Router>
   );
