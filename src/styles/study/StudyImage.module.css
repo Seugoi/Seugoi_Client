@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 22vh;
+    height: 19vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
     align-items: center;
     border: 1px solid white;
     border-radius: 100px;
-    padding: 3% 5%;
+    padding: 2% 6%;
 }
 .D-day > p {
     font-weight: var(--Medium);

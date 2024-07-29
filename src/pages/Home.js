@@ -26,7 +26,7 @@ export default function Home() {
             <MyStudyContainer/>
             <WiseSaying/>
             <div>
-                <div style={{display:"flex", padding:"0 25px", columnGap:"5px"}}>
+                <div style={{display:"flex", padding:"0 25px", columnGap:"5px", color:"white"}}>
                     <Icon icon="bxs-bar-chart-alt-2" style={{fontSize:"1.3rem"}}/>
                     <h3>요즘 뜨고있는</h3>
                 </div>
