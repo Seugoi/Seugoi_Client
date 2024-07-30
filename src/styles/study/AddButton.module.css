@@ -1,0 +1,13 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: var(--green);
+    z-index: 100;
+    top: 90%;
+    right: 5%;
+}
