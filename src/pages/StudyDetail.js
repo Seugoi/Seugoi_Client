@@ -8,7 +8,7 @@ import AddButton from '../components/study/AddButton';
 function StudyDetailPage() {
     return (
         <div className={styles['container']}>
-            <TitleBar text='' link='' />
+            <TitleBar text='' link='/home' />
             <StudyImage />
             <StudyDetail />
             <AddButton />

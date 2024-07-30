@@ -6,7 +6,7 @@ import TitleBar from '../components/common/TitleBar';
 function TaskNoticeAddPage() {
     return (
         <div className={styles['container']}>
-            <TitleBar title="과제 / 공지 추가" link="/study/1" />
+            <TitleBar title="과제 / 공지 추가" link='/study/1' />
             <TaskNoticeAdd />
         </div>
     )
