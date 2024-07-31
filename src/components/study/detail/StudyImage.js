@@ -1,5 +1,5 @@
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/StudyImage.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/StudyImage.module.css';
 
 function StudyImage() {
     return (

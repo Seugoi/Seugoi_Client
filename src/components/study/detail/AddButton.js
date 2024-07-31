@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Icon } from "@iconify/react";
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/AddButton.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/AddButton.module.css';
 
 function AddButton() {
     const navigate = useNavigate();

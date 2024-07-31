@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/StudyDetail.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/StudyDetail.module.css';
 
 import TaskView from './TaskView';
 import StudyView from './StudyView';

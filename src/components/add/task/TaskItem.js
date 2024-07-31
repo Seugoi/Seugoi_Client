@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react';
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/add/task/TaskItem.module.css';
 import TaskCompletePeople from '../TaskCompletePeople';
+import Images from './Images';
 
 function TaskItem() {
     return (
@@ -19,6 +20,7 @@ function TaskItem() {
                     드디어 java study를 시작한지 5일이 되었습니다 :)
                     오늘도 화이팅!
                 </p>
+                <Images />
                 <div className={styles['link']}>
                     <Icon icon="gravity-ui:link" fontSize="16" />
                     <p>참고 링크</p>
