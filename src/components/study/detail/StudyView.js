@@ -1,9 +1,9 @@
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/StudyView.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/StudyView.module.css';
 
 import NumberOfPeople from './NumberOfPeople';
 import Profile from './Profile';
-import TaskCompletePeople from '../add/TaskCompletePeople';
+import TaskCompletePeople from '../../add/TaskCompletePeople';
 
 function StudyView() {
     return (

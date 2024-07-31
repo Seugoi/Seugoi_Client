@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/NumberOfPeople.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/NumberOfPeople.module.css';
 
 function NumberOfPeople() {
     return (

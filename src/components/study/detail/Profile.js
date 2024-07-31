@@ -1,5 +1,5 @@
-import '../../styles/common/Style.css';
-import styles from '../../styles/study/Profile.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/detail/Profile.module.css';
 
 function Profile() {
     return (

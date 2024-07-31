@@ -1,9 +1,9 @@
 import React from "react";
-import StudyView from "../components/study/StudyView";
+import StudyView from "../components/study/detail/StudyView";
 import '../styles/common/Style.css';
-import styles from '../styles/study/StudyDetail.module.css';
+import styles from '../styles/study/detail/StudyDetail.module.css';
 import TitleBar from "../components/common/TitleBar";
-import StudyImage from "../components/study/StudyImage";
+import StudyImage from "../components/study/detail/StudyImage";
 import Button from "../components/add/Button";
 
 export default function Study() {

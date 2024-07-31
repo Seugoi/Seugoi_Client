@@ -1,9 +1,9 @@
 import '../styles/common/Style.css';
-import styles from '../styles/study/StudyDetail.module.css';
+import styles from '../styles/study/detail/StudyDetail.module.css';
 import TitleBar from "../components/common/TitleBar";
-import StudyImage from '../components/study/StudyImage';
-import StudyDetail from "../components/study/StudyDetail";
-import AddButton from '../components/study/AddButton';
+import StudyImage from '../components/study/detail/StudyImage';
+import StudyDetail from "../components/study/detail/StudyDetail";
+import AddButton from '../components/study/detail/AddButton';
 
 function StudyDetailPage() {
     return (
