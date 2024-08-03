@@ -29,7 +29,3 @@
 .scroll-container::-webkit-scrollbar {
     display: none;
 }
-
-.scroll-container > div:last-child {
-    margin-bottom: 30px;
-}

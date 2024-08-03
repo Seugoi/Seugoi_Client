@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
-import '../../styles/common/Style.css';
-import styles from '../../styles/like_study/LikeStudyItem.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/like_study/LikeStudyItem.module.css';
 import { useState } from 'react';
 
 function LikeStudyItem() {

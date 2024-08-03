@@ -1,5 +1,5 @@
-import '../../styles/common/Style.css';
-import styles from '../../styles/like_study/LikeStudy.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/like_study/LikeStudy.module.css';
 
 import LikeStudyList from './LikeStudyList';
 
