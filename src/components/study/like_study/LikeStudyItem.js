@@ -1,13 +1,16 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import axios from 'axios';
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/study/like_study/LikeStudyItem.module.css';
 
+import { StudyDetailContext } from '../detail/StudyDetailProvider';
+
 function LikeStudyItem({ data }) {
     const navigate = useNavigate();
     const [clickedIcon, setClickedIcon] = useState('iconamoon:bookmark-fill');
+    const { clickedStudyItem } = useContext(StudyDetailContext);
 
     async function clickLike(study_id) {
         try {
@@ -38,6 +41,7 @@ function LikeStudyItem({ data }) {
     
     const click = (id) => {
         navigate(`/study/${id}`);
+        clickedStudyItem(id);
     }
 
     return (
