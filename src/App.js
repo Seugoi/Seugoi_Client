@@ -25,7 +25,7 @@ function App() {
 
         <Route path='/study' element={<Study />} />
 
-        <Route path='/study/1' element={<StudyDetail />} />
+        <Route path='/study/:id' element={<StudyDetail />} />
 
         <Route path='/add' element={<TaskNoticeAdd />} />
 
