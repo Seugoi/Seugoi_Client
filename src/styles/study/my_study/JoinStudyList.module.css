@@ -6,3 +6,23 @@
 .container > div:last-child {
     margin-bottom: 18px;
 }
+
+.no-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.no-study > p {
+    font-weight: var(--SemiBold);
+    font-size: 18px;
+    color: white;
+    opacity: 0.5;
+}

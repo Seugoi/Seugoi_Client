@@ -1,4 +1,4 @@
-import MyStudy from "../components/my_study/MyStudy";
+import MyStudy from "../components/study/my_study/MyStudy";
 
 function MyStudyPage() {
     return (

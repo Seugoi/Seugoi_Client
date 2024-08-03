@@ -1,8 +1,8 @@
 import '../styles/common/Style.css';
-import styles from '../styles/like_study/LikeStudy.module.css';
+import styles from '../styles/study/like_study/LikeStudy.module.css';
 
 import TitleBar from '../components/common/TitleBar';
-import LikeStudy from "../components/like_study/LikeStudy";
+import LikeStudy from "../components/study/like_study/LikeStudy";
 
 function LikeStudyPage() {
     return (
