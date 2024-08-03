@@ -7,6 +7,14 @@
     background-color: #252831;
 }
 
+.image-container {
+    display: flex;
+    column-gap: 10px;
+}
+.image-container > input[type="file"] {
+    display: none;
+}
+
 .task-title,
 .task-content,
 .task-link,
@@ -50,14 +58,41 @@
     column-gap: 10px;
 }
 
-.task-image > .image-button {
-    padding: 2%;
+.image-button {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--line-color);
     border-radius: 10px;
     color: var(--line-color);
+}
+
+.imageURL {
+    width: 50px;
+    height: 50px;
+}
+.imageURL > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.div-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    top: -11%;
+    left: 9%;
 }
 
 .div-button {
