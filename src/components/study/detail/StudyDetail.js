@@ -5,8 +5,7 @@ import styles from '../../../styles/study/detail/StudyDetail.module.css';
 import TaskView from './TaskView';
 import StudyView from './StudyView';
 
-
-function StudyDetail() {
+function StudyDetail({ data }) {
     const [selectComponent, setSelectComponent] = useState('study');
 
     return (
@@ -29,7 +28,7 @@ function StudyDetail() {
 
             <div className={styles['scroll-content']}>
                 { selectComponent === 'task' && <TaskView /> }
-                { selectComponent === 'study' && <StudyView /> }
+                { selectComponent === 'study' && <StudyView data={data} /> }
             </div>
         </div>
     )

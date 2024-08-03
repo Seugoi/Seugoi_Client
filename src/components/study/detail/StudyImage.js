@@ -1,17 +1,17 @@
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/study/detail/StudyImage.module.css';
 
-function StudyImage() {
+function StudyImage({ data }) {
     return (
         <div className={styles['container']}>
-            <img src="https://3ba1f5b2.rocketcdn.me/wp-content/uploads/2012/01/Difference-Between-Example-and-Sample.jpg" />
+            <img src={data.image} />
             <div className={styles['study-info']}>
                 <div className={styles['info']}>
-                    <p>Java Study</p>
-                    <p>#java #코딩</p>
+                    <p>{data.name}</p>
+                    <p>#{data.category.tag1} #{data.category.tag2}</p>
                 </div>
                 <div className={styles['D-day']}>
-                    <p>D-40</p>
+                    <p>D-{data.Dday}</p>
                 </div>
             </div>
         </div>
