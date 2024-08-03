@@ -1,14 +1,18 @@
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/study/my_study/StudyItem.module.css';
 
 import { IoInfinite } from "react-icons/io5";
+import { StudyDetailContext } from '../detail/StudyDetailProvider';
 
 function StudyItem({ data }) {
     const navigate = useNavigate();
+    const { clickedStudyItem } = useContext(StudyDetailContext);
 
     const click = (id) => {
         navigate(`/study/${id}`);
+        clickedStudyItem(id);
     }
 
     return (
