@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
 import axios from 'axios';
 import '../../../styles/common/Style.css';
@@ -35,7 +35,7 @@ function MakeStudyList() {
                     <div className={styles['container']}>
                         {
                             data && data.map((item, index) => (
-                                <StudyItem data={item.study} key={index} />
+                                <StudyItem data={item} key={index} />
                             ))
                         }
                     </div>
