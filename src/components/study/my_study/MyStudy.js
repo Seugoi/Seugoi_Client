@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../../styles/common/Style.css';
-import styles from '../../styles/my_study/MyStudy.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/my_study/MyStudy.module.css';
 
 import MakeStudyList from './MakeStudyList';
 import JoinStudyList from './JoinStudyList';

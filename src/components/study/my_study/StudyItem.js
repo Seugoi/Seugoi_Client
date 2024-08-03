@@ -1,5 +1,5 @@
-import '../../styles/common/Style.css';
-import styles from '../../styles/my_study/StudyItem.module.css';
+import '../../../styles/common/Style.css';
+import styles from '../../../styles/study/my_study/StudyItem.module.css';
 
 function StudyItem({ data }) {
     return (
