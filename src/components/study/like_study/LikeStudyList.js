@@ -35,7 +35,7 @@ function LikeStudyList() {
                     <div className={styles['container']}>
                         {
                             data && data.map((item, index) => (
-                                <LikeStudyItem data={item} key={index} />
+                                <LikeStudyItem data={item} key={index} likeStudy={likeStudy} />
                             ))
                         }
                     </div>
