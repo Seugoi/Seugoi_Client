@@ -7,7 +7,7 @@ import styles from '../../../styles/study/like_study/LikeStudyItem.module.css';
 
 import { StudyDetailContext } from '../detail/StudyDetailProvider';
 
-function LikeStudyItem({ data }) {
+function LikeStudyItem({ data, likeStudy }) {
     const navigate = useNavigate();
     const [clickedIcon, setClickedIcon] = useState('iconamoon:bookmark-fill');
     const { clickedStudyItem } = useContext(StudyDetailContext);
@@ -21,6 +21,7 @@ function LikeStudyItem({ data }) {
 
             if(request.status === 200) {
                 console.log(request.data.message);
+                likeStudy();
             } else {
                 console.log("찜하기 실패", request.status);
             }

@@ -7,7 +7,7 @@ import LikeStudy from "../components/study/like_study/LikeStudy";
 function LikeStudyPage() {
     return (
         <div className={styles['container']}>
-            <TitleBar title='' link='/mypage' />
+            <TitleBar title='' link='/my_page' />
             <LikeStudy />
         </div>
     )
