@@ -32,19 +32,19 @@ function App() {
 
         <Route path='/add' element={<TaskNoticeAdd />} />
 
-        <Route path='/my_study' element={<MyStudy />} />
+        <Route path='/study/my' element={<MyStudy />} />
 
-        <Route path='/like_study' element={<LikeStudy />} />
+        <Route path='/study/like' element={<LikeStudy />} />
 
-        <Route path='/study_info' element={<StudyInfo />} />
+        <Route path='/study/info' element={<StudyInfo />} />
 
-        <Route path='/mypage' element={<MyPage />} />
+        <Route path='/my_page' element={<MyPage />} />
 
         <Route path="/my_chat" element={<MyChat />} />
 
-<Route path="/search_chat" element={<SearchChatRoom />} />
+        <Route path="/search_chat" element={<SearchChatRoom />} />
 
-<Route path="/chat" element={<ChatPage />} />
+        <Route path="/chat" element={<ChatPage />} />
       </Routes>
     </Router>
   );
