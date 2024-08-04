@@ -2,6 +2,10 @@ import '../../../styles/common/Style.css';
 import styles from '../../../styles/study/detail/StudyImage.module.css';
 
 function StudyImage({ data }) {
+    if (!data) {
+        return <div>Loading...</div>;
+    }
+    
     return (
         <div className={styles['container']}>
             <img src={data.image} />
