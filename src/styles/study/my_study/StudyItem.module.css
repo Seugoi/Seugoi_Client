@@ -40,7 +40,8 @@
     flex-direction: column;
     justify-content: flex-end;
     row-gap: 2px;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 6%;
     z-index: 2;
 }
 .content > p {

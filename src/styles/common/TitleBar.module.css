@@ -4,6 +4,7 @@
 
 .titleBar-container {
     display: flex;
+    margin-top: calc(62px - 7%);
 }
 
 .title {
