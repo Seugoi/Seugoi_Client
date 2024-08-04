@@ -12,7 +12,7 @@ export default function MyPage() {
     const navigate = useNavigate();
 
     const handleLikeStudy = () => {
-        navigate("/like_study");
+        navigate("/study/like");
     };
     return(
             <div className={styles['container']}>
@@ -30,7 +30,7 @@ export default function MyPage() {
                         </div>
                     </div>
                     <div className={styles['div-button']}>
-                        <Button text="과제 추가하기" backgroundColor="#30343F" />
+                        <Button text="로그아웃" backgroundColor="#30343F" />
                     </div>
                 </div>
             </div>
