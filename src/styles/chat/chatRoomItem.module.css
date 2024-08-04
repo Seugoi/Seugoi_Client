@@ -1,0 +1,25 @@
+.itemContainer {
+  box-sizing: border-box;
+  width: 87.1vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 3.6vh;
+}
+.itemImage {
+  border-radius: 10px;
+  width: 13.8vw;
+}
+.itemTitle {
+  font-size: 20px;
+  color: white;
+}
+.itemContent {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.itemDate {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
