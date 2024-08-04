@@ -12,6 +12,9 @@ import Info from './components/join/Info';
 import StudyInfo from './pages/StudyInfo';
 import Study from './pages/Study';
 import MyPage from './pages/MyPage';
+import MyChat from "./pages/MyChat";
+import SearchChatRoom from "./pages/SearchChatRoom";
+import ChatPage from './pages/ChatPage';
 
 function App() {
   return (
@@ -36,6 +39,12 @@ function App() {
         <Route path='/study_info' element={<StudyInfo />} />
 
         <Route path='/mypage' element={<MyPage />} />
+
+        <Route path="/my_chat" element={<MyChat />} />
+
+<Route path="/search_chat" element={<SearchChatRoom />} />
+
+<Route path="/chat" element={<ChatPage />} />
       </Routes>
     </Router>
   );

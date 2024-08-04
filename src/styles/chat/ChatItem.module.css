@@ -1,0 +1,33 @@
+.chatContainer{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    padding: 16px 15px;
+    box-sizing: border-box;
+}
+.profile{
+    width: 9.4vw;
+    height: 4.3vh;
+    border-radius: 50%;
+}
+.nickName{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    box-sizing: border-box;
+}
+.chatting{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin-top: 6px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.date{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
