@@ -17,7 +17,7 @@ export function MenuBar (){
             <li onClick={() =>go('/my_study')}><Icon icon="bxs:book"  style={iconStyle}/></li>
             <li onClick={() =>go('/add')}><div className={style['round']}><Icon icon="ic:round-plus" style={{fontSize:35, color:'#ffff'}}/></div></li>
             <li onClick={() =>go('/my_chat')}><Icon icon="fluent:chat-24-filled"  style={iconStyle}/></li>
-            <li onClick={() =>go('')}><Icon icon="fluent:person-48-filled"  style={iconStyle}/></li>
+            <li onClick={() =>go('/my_page')}><Icon icon="fluent:person-48-filled"  style={iconStyle}/></li>
         </div>
     )
 
