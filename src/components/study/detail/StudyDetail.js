@@ -6,7 +6,7 @@ import TaskView from './TaskView';
 import StudyView from './StudyView';
 
 function StudyDetail({ data }) {
-    const [selectComponent, setSelectComponent] = useState('study');
+    const [selectComponent, setSelectComponent] = useState('task');
 
     return (
         <div className={styles['div-change']}>
@@ -30,6 +30,8 @@ function StudyDetail({ data }) {
                 { selectComponent === 'task' && <TaskView /> }
                 { selectComponent === 'study' && <StudyView data={data} /> }
             </div>
+
+            <div className={styles['div-gradation']}></div>
         </div>
     )
 }
