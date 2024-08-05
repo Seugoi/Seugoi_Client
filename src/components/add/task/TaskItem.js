@@ -1,12 +1,20 @@
 import { Icon } from '@iconify/react';
+import { useNavigate } from 'react-router-dom';
 import '../../../styles/common/Style.css';
 import styles from '../../../styles/add/task/TaskItem.module.css';
+
 import TaskCompletePeople from '../TaskCompletePeople';
 import Images from './Images';
 
 function TaskItem() {
+    const navigate = useNavigate();
+
+    const itemClick = () => {
+        navigate('/assignment');
+    }
+
     return (
-        <div className={styles['container']}>
+        <div className={styles['container']} onClick={itemClick}>
             <div className={styles['top']}>
                 <div className={styles['status']}>
                     <p>5일차</p>
