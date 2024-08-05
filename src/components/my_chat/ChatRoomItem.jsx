@@ -16,7 +16,7 @@ export function ChatRoomItem({ room }) {
           rowGap: 5,
         }}
       >
-        <h1 className={style["itemTitle"]}>{room.title}</h1>
+        <h1 className={style["itemTitle"]}>{room.name}</h1>
         <p className={style["itemContent"]}>{room.content}</p>
       </div>
       <p className={style["itemDate"]}>{room.date}</p>
