@@ -1,20 +1,17 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { useNavigate } from "react-router";
 import style from '../styles/chat/ChatPage.module.css'
 import { ChatItem } from "../components/my_chat/ChatItem";
 import { ChatItem2 } from "../components/my_chat/ChatItem2";
 import { DropBox } from "../components/my_chat/DropBox";
+
 function ChatPage() {
     const [inputValue, setInputValue] = useState(''); 
     const [showMenu , setShowMenu] = useState(false);
     const navigate = useNavigate();
     const image = '/img/chat/test.png';
-    
-    
-    const sendChatting = () => {
-
-    }
+  
     return(
         <div className={style["container"]}>
             <div className={style["headerBox"]}>
@@ -31,9 +28,9 @@ function ChatPage() {
                 <ChatItem2/>
             </div>
             <div className={style["chatBoxContainer"]}>
-                <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="채팅 입력" onBlur=""/>
+                <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="채팅 입력"/>
                 <Icon icon="ic:round-image" style={{fontSize:24}}/>
-                <div onClick={sendChatting}>
+                <div>
                 <Icon icon="carbon:send-filled" style={{fontSize:24}}/>
                 </div>
               
