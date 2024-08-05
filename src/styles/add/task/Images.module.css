@@ -27,3 +27,8 @@
 .img:nth-child(3) > img {
     position: absolute;
 }
+
+.largeImg {
+    width: 125px;
+    height: 125px;
+}
