@@ -36,7 +36,7 @@ export default function Assignment() {
     return (
         <>
         <div className={styles['background']}>
-            <TitleBar/>
+            <TitleBar link='/study/1' />
             <AssignmantItem/>
             <Comment/>
             <AssignmentBar onFilesSelected={handleFilesSelected} />
