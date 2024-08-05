@@ -15,6 +15,7 @@ import MyPage from './pages/MyPage';
 import MyChat from "./pages/MyChat";
 import SearchChatRoom from "./pages/SearchChatRoom";
 import ChatPage from './pages/ChatPage';
+import Assignment from './pages/Assignment';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path='/study/:id' element={<StudyDetail />} />
 
         <Route path='/add' element={<TaskNoticeAdd />} />
+
+        <Route path='/assignment' element={<Assignment />} />
 
         <Route path='/study/my' element={<MyStudy />} />
 

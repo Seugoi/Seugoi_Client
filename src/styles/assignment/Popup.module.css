@@ -1,0 +1,60 @@
+
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.402);
+    /* padding: 20px; */
+    z-index: 98;
+}
+
+.popup{
+    position: absolute;
+    bottom: 0;
+    height: 30vh;
+    width: 100%;
+    background-color: #252831;
+    border-radius: 30px 30px 0 0;
+}
+
+.popup-content {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.popup-content p {
+    margin-bottom: 10px;
+}
+
+.popup-content button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.file-preview {
+    top: 5px;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+.selected-image {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.delete-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.6rem;
+}
+.delete-icon{
+    color: var(--red);
+}
