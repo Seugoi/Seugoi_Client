@@ -27,7 +27,7 @@ function StudyDetail({ data }) {
             </div>
 
             <div className={styles['scroll-content']}>
-                { selectComponent === 'task' && <TaskView /> }
+                { selectComponent === 'task' && <TaskView study_id={data.id} /> }
                 { selectComponent === 'study' && <StudyView data={data} /> }
             </div>
 

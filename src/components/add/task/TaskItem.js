@@ -6,7 +6,7 @@ import styles from '../../../styles/add/task/TaskItem.module.css';
 import TaskCompletePeople from '../TaskCompletePeople';
 import Images from './Images';
 
-function TaskItem() {
+function TaskItem({ data }) {
     const navigate = useNavigate();
 
     const itemClick = () => {
@@ -17,21 +17,23 @@ function TaskItem() {
         <div className={styles['container']} onClick={itemClick}>
             <div className={styles['top']}>
                 <div className={styles['status']}>
-                    <p>5일차</p>
-                    <p>전원 제출</p>
+                    <p>5번째 과제</p>
+                    <p className={data.completed ? styles['statusGreen'] : styles['statusRed']}>
+                        <Icon icon={data.completed ? "bx:check-circle" : "bx:x-circle"} />
+                        {data.completed ? '제출한 과제' : '미제출한 과제'}
+                    </p>
                 </div>
                 <div className={styles['title']}>
-                    <p>바탕화면 정리</p>
-                    <p>~ 2024.06.28</p>
+                    <p>{data.title}</p>
+                    <p>2024.06.28</p> {/* 과제 생성 날짜 */}
                 </div>
                 <p className={styles['content']}>
-                    드디어 java study를 시작한지 5일이 되었습니다 :)
-                    오늘도 화이팅!
+                    {data.description}
                 </p>
                 <Images />
                 <div className={styles['link']}>
                     <Icon icon="gravity-ui:link" fontSize="16" />
-                    <p>참고 링크</p>
+                    <a>{data.link}</a>
                 </div>
             </div>
             <hr />

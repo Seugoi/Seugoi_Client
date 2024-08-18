@@ -7,10 +7,11 @@ import Input from "../Input";
 import ContentInput from "../ContentInput";
 import Button from "../Button";
 import { LuXCircle } from "react-icons/lu";
+import axios from "axios";
 
 function Task() {
     const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+    const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
     const [imageURLs, setImageURLs] = useState([]);
 
@@ -35,14 +36,32 @@ function Task() {
             }
         }
         setImageURLs(prevURLs => [...prevURLs, ...urls]);
-        // onImagesUpload(prevImages => [...prevImages, ...uploadUrls]);
     };
 
     const removeImage = (indexToRemove) => {
         setImageURLs(prevURLs => prevURLs.filter((url, index) => index !== indexToRemove));
-        // onImagesUpload(prevImages => prevImages.filter((file, index) => index !== indexToRemove));
     };
 
+    const addTask = async () => {
+        let formData = new FormData();
+        formData.append("user_id", 1);
+        formData.append("study_id", 1);
+        formData.append("title", title);
+        formData.append("description", description);
+        formData.append("link", link);
+        formData.append("imageURLs", imageURLs);
+
+        // try {
+        //     const request = await axios.post(`${process.env.REACT_APP_HOST}/task`, formData);
+        //     if (request.status === 201) {
+        //         console.log("과제 생성 성공");
+        //     } else {
+        //         console.log("과제 생성 실패", request.status);
+        //     }
+        // } catch(err) {
+        //     console.log(err);
+        // }
+    }
 
     return (
         <div className={styles['container']}>
@@ -53,7 +72,7 @@ function Task() {
             
             <div className={styles['task-content']}>
                 <p>과제 내용</p>
-                <ContentInput text="내용을 입력해주세요" setContent={setContent} />
+                <ContentInput text="내용을 입력해주세요" setContent={setDescription} />
             </div>
 
             <div className={styles['task-link']}>
@@ -68,7 +87,7 @@ function Task() {
                         <Icon icon='ic:round-plus' fontSize="35"/>
                     </label>
                     <input type="file" id="fileInput" multiple onChange={handleFileChange} />
-                    {imageURLs.map((item, index) => (
+                    {imageURLs.map((url, index) => (
                         <div className={styles['div-image']} key={index}>
                             <div className={styles['div-icon']}> 
                                 <LuXCircle 
@@ -79,8 +98,7 @@ function Task() {
                             </div>
                             <div className={styles['imageURL']}>
                                 <img
-                                    src={item}
-                                    alt={`Uploaded Image ${index + 1}`}
+                                    src={url}
                                     id='imgUrl'
                                 />
                             </div>
@@ -89,7 +107,7 @@ function Task() {
                 </div>
             </div>
 
-            <div className={styles['div-button']}>
+            <div className={styles['div-button']} onClick={addTask}>
                 <Button text="과제 추가하기" backgroundColor="#B2B2BB" />
             </div>
         </div>
