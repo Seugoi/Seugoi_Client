@@ -28,7 +28,7 @@ const Info = () => {
       }
     }
     fetchUserInfo();
-  }, [userId]);
+  }, []);
 };
 
 export default Info;
