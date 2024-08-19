@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { useDispatch } from 'react-redux';
-import { logout } from '../../redux/actions';
+import { logout } from '../redux/actions';
 
 import Profile from "../components/mypage/Profile";
 import styles from "../styles/mypage/mypage.module.css"
