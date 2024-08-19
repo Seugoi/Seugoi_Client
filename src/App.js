@@ -28,26 +28,20 @@ function App() {
         <Route path='/home' element={<Home />} />
 
         <Route path='/study' element={<Study />} />
-
+        <Route path='/study/like' element={<LikeStudy />} />
+        <Route path='/study/info' element={<StudyInfo />} />
         <Route path='/study/:id' element={<StudyDetail />} />
+        <Route path='/study/my' element={<MyStudy />} />
 
         <Route path='/add' element={<TaskNoticeAdd />} />
 
         <Route path='/assignment' element={<Assignment />} />
 
-        <Route path='/study/my' element={<MyStudy />} />
-
-        <Route path='/study/like' element={<LikeStudy />} />
-
-        <Route path='/study/info' element={<StudyInfo />} />
+        <Route path="/my_chat" element={<MyChat />} />
+        <Route path="/search_chat" element={<SearchChatRoom />} />
+        <Route path="/chat" element={<ChatPage />} />
 
         <Route path='/my_page' element={<MyPage />} />
-
-        <Route path="/my_chat" element={<MyChat />} />
-
-        <Route path="/search_chat" element={<SearchChatRoom />} />
-
-        <Route path="/chat" element={<ChatPage />} />
       </Routes>
     </Router>
   );
