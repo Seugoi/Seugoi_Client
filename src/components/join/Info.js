@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+
+import { useDispatch } from 'react-redux';
+import { loginSuccess } from '../../redux/actions';
 
 const Info = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
-  const [userId, setUserId] = useState(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchUserInfo = async () => {
@@ -15,9 +17,9 @@ const Info = () => {
       try {
         const response = await axios.post(`${process.env.REACT_APP_HOST}/users/kakao_oauth`, { code });
         if (response.status === 200) {
-          setUserId(response.data);
           console.log(response.data);
           navigate("/home");
+          dispatch(loginSuccess(response.user.id));
         } else {
           console.log("카카오 로그인 실패", response.status);
         }
