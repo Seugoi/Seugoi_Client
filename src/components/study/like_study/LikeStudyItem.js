@@ -52,7 +52,7 @@ function LikeStudyItem({ data, likeStudy }) {
                     {data && data.image ? (
                         <img src={data.image} />
                     ) : (
-                        <img src="https://3ba1f5b2.rocketcdn.me/wp-content/uploads/2012/01/Difference-Between-Example-and-Sample.jpg" />
+                        <img src="/images/logo.png" />
                     )}
                 </div>
 
