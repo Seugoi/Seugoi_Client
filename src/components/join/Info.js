@@ -19,7 +19,7 @@ const Info = () => {
         if (response.status === 200) {
           console.log(response.data);
           navigate("/home");
-          dispatch(loginSuccess(response.user.id));
+          dispatch(loginSuccess(response.data.user.id));
         } else {
           console.log("카카오 로그인 실패", response.status);
         }
