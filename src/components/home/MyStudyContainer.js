@@ -1,16 +1,16 @@
 import React from "react";
+
 import styles from "../../styles/home/MyStudy.module.css"
 import MyStudyItem from "./MyStudyItem";
 
-export default function MyStudyContainer() {
+export default function MyStudyContainer({ data }) {
     return (
         <div className={styles['item-container']}>
-            <MyStudyItem />
-            <MyStudyItem />
-            <MyStudyItem />
-            <MyStudyItem />
-            <MyStudyItem />
-            <MyStudyItem />
+            {
+                data && data.map((item, index) => (
+                    <MyStudyItem data={item.study} key={index} />
+                ))
+            }
         </div>
     );
 }
