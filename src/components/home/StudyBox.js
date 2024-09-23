@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Icon } from '@iconify/react';
+
 import '../../styles/common/Style.css';
 import styles from "../../styles/home/StudyBox.module.css";
 
-function StudyBox() {
+function StudyBox({ data }) {
     const [isBookmarked, setIsBookmarked] = useState(false);
 
     const navigate = useNavigate();
@@ -30,9 +31,13 @@ function StudyBox() {
                         onClick={handleIconClick}
                     />
                     <div className={styles['content']}>
-                        <p>java study 코딩테스트</p>
+                        <p>{data && data.title}</p>
                         <div className={styles['category']}>
-                            <p>#java #코딩테스트 #개발</p>
+                            {
+                                data && data.category && Object.keys(data.category).map((key, index) => (
+                                    <p key={index}>#{data.category[key]}</p>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
