@@ -11,7 +11,7 @@ function TaskView({ study_id }) {
 
     async function getTaskNotice() {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_HOST}/${study_id}/all`);
+            const response = await axios.get(`${process.env.REACT_APP_HOST}/study/${study_id}/all`);
             if (response.status === 200) {
                 console.log("공지, 과제 불러오기 성공");
                 setData(response.data);
