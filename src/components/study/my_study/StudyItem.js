@@ -16,24 +16,24 @@ function StudyItem({ data }) {
     }
 
     return (
-        <div className={styles['container']} onClick={() => click(data.id)}>
+        <div className={styles['container']} onClick={() => click(data.study.id)}>
             <div className={styles['inner-container']}>
                 <div className={styles['img']}>
-                    {data && data.image ? (
-                        <img src={data.image} />
+                    {data && data.study.image ? (
+                        <img src={data.study.image} />
                     ) : (
                         <img src="/images/logo.png" />
                     )}
                 </div>
                 <div className={styles['content']}>
-                    {data && data.title ? (
-                        <p>{data.title}</p>
+                    {data && data.study.title ? (
+                        <p>{data.study.title}</p>
                     ) : (
                         <p>제목없음</p>
                     )}
                     <div className={styles['status']}>
-                        {data && data.Dday ? (
-                            <p>D-{data.Dday}</p>
+                        {data && data.study.Dday ? (
+                            <p>D-{data.study.Dday}</p>
                         ) : (
                             <p>D- <IoInfinite /></p>
                         )}
